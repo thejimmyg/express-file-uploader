@@ -3,30 +3,15 @@
   "version": "0.1.1",
   "description": "Upload files to a directory",
   "scripts": {
-    "docker:build": "docker build . -t thejimmyg/express-file-uploader:0.1.1",
-    "docker:push": "docker push thejimmyg/express-file-uploader:0.1.1",
-    "docker:build:test": "docker build . -t thejimmyg/express-file-uploader:test",
-    "docker:push:test": "docker push thejimmyg/express-file-uploader:test",
-    "docker:run:local": "docker-compose stop && docker-compose pull && docker-compose up --build -d && docker-compose logs -f",
-    "docker:stop:local": "docker-compose stop",
-    "start": "node bin/server.js",
-    "fix": "standard --fix index.js bin/*.js lib/*.js"
   },
   "author": "JimmyG",
   "license": "MIT",
   "dependencies": {
-    "debug": "^4.1.0",
-    "express": "^4.16.4",
-    "express-fileupload": "^1.0.0",
-    "express-mustache-jwt-signin": "^0.2.7",
-    "express-mustache-overlays": "^0.1.4",
-    "shelljs": "^0.8.3"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:thejimmyg/express-file-uploader.git"
   },
   "devDependencies": {
-    "standard": "^12.0.1"
   }
 }

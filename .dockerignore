@@ -1,7 +1,0 @@
-.DS_Store
-.git
-.gitignore
-.sw[op]
-node_modules
-domain
-upload
